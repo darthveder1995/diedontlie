@@ -1,0 +1,32 @@
+name: DieDontLie
+options:
+  bundleIdPrefix: com.diedontlie
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  DieDontLie:
+    type: application
+    platform: iOS
+    sources:
+      - path: DieDontLie
+    info:
+      path: DieDontLie/Info.plist
+      properties:
+        CFBundleDisplayName: Die Don't Lie
+        UILaunchStoryboardName: LaunchScreen
+        NSCameraUsageDescription: "Camera is required to track the die in real time."
+        NSMicrophoneUsageDescription: "Microphone access is not used."
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIStatusBarHidden: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.diedontlie.DieDontLie
+        INFOPLIST_FILE: DieDontLie/Info.plist
