@@ -1,0 +1,1 @@
+This is an iOS app so low die throws don't result in points.
